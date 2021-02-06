@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scientific Calculator</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/calculator.js"></script>
+    </head>
+    <body>
+		<header>
+			<h1>Scientific Calculator</h1>
+		</header>
+		<main>
+		
+        <div id="calculator">
+			
+			<input type="text" id="display">
+			<table>
+				<tr>
+					<td><input type="button" id="sin" value="Sin" class="btn"></td>
+					<td><input type="button" id="pi" value="&Pi;" class="btn"></td>
+					<td><input type="button" id="percent" value="%" class="btn" onclick="collectCharacters('%')"></td>
+					<td><input type="button" id="clear" value="C" class="btn"></td>
+					<td><input type="button" id="cancel-entry" value="&larr;" class="btn"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="cos" value="Cos" class="btn"></td>
+					<td><input type="button" id="num7" value="7" class="btn"  onclick="collectCharacters(7)"></td>
+					<td><input type="button" id="num8" value="8" class="btn"  onclick="collectCharacters(8)"></td>
+					<td><input type="button" id="num9" value="9" class="btn"  onclick="collectCharacters(9)"></td>
+					<td><input type="button" id="divide" value="/" class="btn"  onclick="collectCharacters('/')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="tan" value="Tan" class="btn"></td>
+					<td><input type="button" id="num4" value="4" class="btn"  onclick="collectCharacters(4)"></td>
+					<td><input type="button" id="num5" value="5" class="btn"  onclick="collectCharacters(5)"></td>
+					<td><input type="button" id="num6" value="6" class="btn"  onclick="collectCharacters(6)"></td>
+					<td><input type="button" id="multiply" value="*" class="btn"  onclick="collectCharacters('*')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="sqrt" value="&Sqrt;" class="btn"></td>
+					<td><input type="button" id="num1" value="1" class="btn"  onclick="collectCharacters(1)"></td>
+					<td><input type="button" id="num2" value="2" class="btn"  onclick="collectCharacters(2)"></td>
+					<td><input type="button" id="num3" value="3" class="btn"  onclick="collectCharacters(3)"></td>
+					<td><input type="button" id="subtract" value="-" class="btn"  onclick="collectCharacters('-')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="power" value="x^"class="btn" onclick="collectCharacters('^')"></td>
+					<td><input type="button" id="eulers" value="e" class="btn"></td>
+					
+					<td><input type="button" id="num0" value="0" class="btn" onclick="collectCharacters(0)"></td>
+					<td><input type="button" id="decimal" value="." class="btn" onclick="collectCharacters('.')"></td>
+					<td><input type="button" id="add" value="+" class="btn"  onclick="collectCharacters('+')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="log" value="log" class="btn"></td>
+					<td><input type="button" id="nlog" value="ln" class="btn"></td>
+					<td><input type="button" id="openPara" value="&#40;" class="btn" onclick="collectCharacters('(')"></td>
+					<td><input type="button" id="closePara" value="&#41;" class="btn" onclick="collectCharacters(')')"></td>
+					<td><button type="button" id="equal" class="btn">=</button></td>
+				</tr>
+			</table>
+        </div>
+		</main>
+		<footer>
+			<p>Designed by Alwin Jose Kurian &copy; 2020 July</p>
+		</footer>
+    </body>
+</html>
